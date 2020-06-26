@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body{
+     font-family: 'Lato', sans-serif;
+     font-size: 15px;
+     line-height: 1.5;
+     padding: 0;
+     margin: 0;
+     background: linear-gradient(#ccc,#fff);
+}
+.shadow {
+     -webkit-box-shadow: 3px 3px 5px 6px rgb(39, 185, 39);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow:    3px 3px 5px 6px rgb(39, 185, 39);  /* Firefox 3.5 - 3.6 */
+     box-shadow:         3px 3px 5px 7px rgb(39, 185, 39);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+   }
+
+/* globaluri*/
+.container{
+     width: 80%;
+     margin: auto;
+     overflow: hidden;
+}
+img:hover{
+     transform: scale(1.05);
+     transition: all 0.3s;
+     cursor: pointer;
+}
+
+img:not(:hover){
+     transition: all 0.7s;
+}
+ul{
+     margin: 0;
+     padding: 0;  
+}
+
+.button_1{
+     height: 38px;
+     background: rgb(39, 185, 39);
+     border: 0;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: #ffffff;
+}
+
+.dark{
+     padding: 15px;
+     background: #35424a;
+     border: 0;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: #ffffff;
+}
+
+.span{
+     background: rgb(39, 185, 39);
+     color: #fff;
+     padding: 10px;
+     font-size: 18px;
+     font-weight: bold;
+     cursor: pointer;
+
+}
+/* header */
+
+header {
+     background: #35424a;
+     color: #ffffff;
+     padding-top: 30px;
+     /*responsiuloba*/
+     min-height: 70px;
+     border-bottom: rgb(39, 185, 39) 3px solid ;
+}
+
+header a{
+     color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+}
+
+header li{
+     float: left;
+     display: inline;
+     padding: 0 20px 0 20px;
+}
+
+header #branding{
+     float: left;
+}
+
+header #branding h1{
+     margin: 0;
+}
+
+header nav{
+     float: right;
+     margin-top:10px;
+}
+
+header .highlight, header .current a{
+     color: rgb(39, 185, 39);
+     font-weight: bold;
+}
+
+header a:hover{
+     color: #cccccc;
+     font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+     min-height: 486px;
+     background:url('../img/imgonline-com-ua-blur-dyjsXWQb7pNbs.jpg') no-repeat ;
+     background-position: center;
+     text-align: center;
+     color: #ffffff;
+     width: 100%;
+     background-size: cover;
+}
+
+#showcase h1{
+     margin-top: 100px;
+     font-size: 55px;
+     margin-bottom: 10px;
+}
+
+#showcase p{
+     font-size: 20px;
+}
+
+#newslatter{
+     padding: 15px;
+     color: hsl(0, 0%, 100%);
+     background: #35424a;
+}
+
+#newslatter h1{
+     float: left;
+}
+
+#newslatter form{
+     float: right;
+     margin-top: 15px;
+}
+
+#newslatter input[type="email"]{
+     padding: 4px;
+     height: 25px;
+     width: 250px;
+}
+
+/*Boxes*/
+#boxes{
+     margin-top: 20px;
+}
+
+#boxes .box{
+     float: left;
+     text-align: center;
+     width: 30%;
+     padding: 10px;
+}
+
+#boxes .box img{
+     width: 90px;
+}
+
+/*sidebar*/
+
+aside#sidebar{
+     float: right;
+     width: 30%;
+     margin-top: 10px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+     width: 90%;
+     padding: 5px;
+}
+/*article*/
+article#main-col{
+     float: left;
+     width: 65%;
+}
+
+/*Services*/
+ul#Services li{
+     list-style: none;
+     padding: 20px;
+     border: #cccccc solid 1px;
+     margin-bottom: 5px;
+     background: #e6e6e6;
+}
+
+/*img-section*/
+.img-section img{
+     width: 30%;
+     margin: 10px;
+}
+
+.img-section {
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+}
+
+.img-container img{
+     width: 30%;
+     margin: 11px;
+}
+
+footer{
+     padding: 20px;
+     margin-top: 20px;
+     color: #ffffff;
+     background-color:hsl(120, 65%, 44%);
+     text-align: center;
+}
+
+/*media querris*/
+
+@media(max-width: 768px){
+     header #branding,
+     header nav,
+     header nav li,
+     #newslatter h1,
+     #newslatter form,
+     #boxes .box,
+     article#main-col,
+     aside#sidebar,
+     .img-container img{
+          float: none;
+          text-align: center;
+          width: 100%;
+     }
+
+     header{
+          padding-bottom: 20px;
+     }
+
+     #showcase h1{
+          margin-top: 40px;
+     }
+
+     #newslatter button, .quote button{
+          display: block;
+          width: 100%;
+     }
+
+     #newslatter form input[type="email"], .quote input, .qoute textarea{
+          width: 100%;
+          margin-bottom: 5px;
+     }
+}
+
+/*img-section*/
